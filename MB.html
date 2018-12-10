@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="MB.js"></script>
+        <link rel="stylesheet" href="MB.css">
+    </head>
+    <body onload="myfunction()">
+        <form class="messageboard">
+            <h1>留言板</h1>
+            <div id="cancel">
+                <button type="button" class="cancel" onclick="cancel()">注销</button>
+            </div>
+            <div id="message" >
+                <input type="text" class="message" id="msg" placeholder="请在此写下你的留言">
+                <button type="button" class="send"  onclick="tosend()">发送</button>
+            </div>
+            <div id="msg-content">
+                <ul id='msg-list'></ul>                   
+            </div>
+        </form>
+    </body>
+</html>
